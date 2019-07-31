@@ -1,10 +1,7 @@
-#include <iostream>
-#include <cstdio>
-#include <map>
-#include <string>
+#include "stdafx.h"
 
 template <typename T>
-void print(const T &map, char c) {
+void print(const T& map, char c) {
 	if (const auto itr(map.find(c)); itr != map.end()) {
 		std::cout << "There are " << itr->second << " " << c << " characters." << "\n";
 	}
@@ -34,4 +31,6 @@ int main() {
 			std::cout << "You entered something else: " << c << "\n";
 		}
 	}
+
+	return 0;
 }
